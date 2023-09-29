@@ -6,9 +6,9 @@ use Illuminate\Support\Facades\Hash;
 
 class StoreUserDto extends BaseDto
 {
-    protected string $name;
-    protected string $email;
-    protected string $password;
+    protected ?string $name;
+    protected ?string $email;
+    protected ?string $password;
 
     public function getName(): ?string
     {

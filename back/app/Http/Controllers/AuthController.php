@@ -4,8 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Auth\LoginRequest;
+use App\Http\Requests\UpdateUserRequest;
 use App\Http\Resources\UserResource;
 use App\Models\User;
+use App\Services\Dto\StoreUserDto;
+use App\Services\UserService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
@@ -39,5 +42,15 @@ class AuthController extends Controller
         $request->user()->currentAccessToken()->delete();
 
         return response()->json(null, 200);
+    }
+
+    public function updateProfile(UpdateUserRequest $request)
+    { 
+        $user = UserService::store(
+            new StoreUserDto($request->only('email', 'password', 'name')),
+            $request->user()
+        );
+
+        return response()->json(new UserResource($user), 200); 
     }
 }

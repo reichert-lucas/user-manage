@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 Route::group([
@@ -16,6 +17,9 @@ Route::group([
         'prefix' => 'auth',
     ], function () {
         Route::get('me', [AuthController::class, 'me']);
+        Route::put('me', [AuthController::class, 'updateProfile']);
         Route::get('logout', [AuthController::class, 'logout']);
     });
+
+    Route::resource('users', UserController::class);
 });

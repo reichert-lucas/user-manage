@@ -26,4 +26,16 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    static public function search(string $search = null)
+    {
+        $query = self::query();
+
+        if (!is_null($search)) {
+            $query->where('name', 'LIKE', "%$search%")
+                    ->orWhere('email', 'LIKE', "%$search%");
+        }
+
+        return $query;
+    }
 }

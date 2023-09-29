@@ -7,10 +7,15 @@ use App\Services\Dto\StoreUserDto;
 
 class UserService
 {
-    public static function store(StoreUserDto $userDto): User
+    public static function store(StoreUserDto $userDto, ?User $user = null): User
     {
-        $user = User::create($userDto->toArray());
+        if ($user) {
+            $user->update($userDto->toArray());
+            $user->refresh();
+        } else {
+            $user = User::create($userDto->toArray());
+        }
 
-        return $user;   
+        return $user;
     }
 }
