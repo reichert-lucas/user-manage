@@ -1,0 +1,54 @@
+version: "3.5"
+
+networks: 
+  app-network:
+    driver: bridge
+
+services:
+  back:
+    container_name: 'user-manager-back'
+    build: ./back
+    ports: 
+      - "8000:8000"
+    volumes:
+      - ./back:/var/www
+    networks: 
+      - app-network
+  mysql:
+    container_name: 'user-manager-mysql'
+    image: mysql
+    ports: 
+      - "3306:3306"
+    volumes:
+      - .docker/dbdata:/var/lib/mysql
+    environment: 
+      MYSQL_ROOT_PASSWORD: 'root'
+      MYSQL_DATABASE: 'user_manager'
+      MYSQL_PASSWORD: 'root'
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+    networks: 
+      - app-network
+  phpmyadmin:
+    container_name: 'user-manager-phpmyadmin'
+    image: phpmyadmin/phpmyadmin
+    environment:
+      - PMA_ARBITRARY=1
+      - MYSQL_PASSWORD='root'
+      - MYSQL_ROOT_PASSWORD='root'
+    ports:
+      - "8081:80"
+    depends_on:
+      - mysql
+    networks:
+      - app-network
+  front:
+    container_name: 'user-manager-front'
+    build: ./front
+    ports: 
+      - "3000:3000"
+    volumes:
+      - ./front/:/var/www
+    networks: 
+      - app-network
+    depends_on:
+      - back
