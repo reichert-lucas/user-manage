@@ -10,6 +10,12 @@
 ### Rodando o ambiente docker
 `docker-compose up`
 
+### Populando a base de dados
+`docker exec -it user-manager-front php artisan migrate:fresh --seed`
+
+### Acessando o projeto
+O projeto vai estar disponível nos seguintes endereços: `https://localhost:3000` e `http://localhost:8000`
+
 ## Objetivos
 - [x] Tela de login;
 - [x] CRUD completo de usuário;
