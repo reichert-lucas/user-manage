@@ -30,7 +30,7 @@ O projeto vai estar disponível nos seguintes endereços: `https://localhost:300
 - [x] As telas de cadastro e edição não podem ser exibidas em modal;
 - [x] O Controle de rotas na camada web precisa ser feita com VueRouter;
 - [x] Todas as rotas precisam estar protegidas e a autenticação deve ser feita na camada de api stateless com JWT Token;
-- [ ] O sistema precisa enviar um e-mail sempre que um cadastro for feito, editado ou deletado;
+- [ ] O sistema precisa enviar um e-mail sempre que um cadastro for feito, editado ou deletado; -> Não fiz essa parte para facilitar o deploy da demo no servidor, já que não tenho nenhum servidor de e-mail. Mas se eu fosse fazer, eu ia criar um evento, que ao ser disparado ia enviar o e-mail para a fila do laravel, para evitar de quem estiver usando o sistema, perder tempo esperando o envio do e-mail. Na empresa onde trabalho usamos o horizon para as filas.
 - [x] O sistema precisa oferecer suporte a criação do primeiro usuário via CLI (`docker exec -it user-manager-front php artisan migrate:fresh --seed`) 
 
 #### Tecnologias que devem ser utilizadas:
