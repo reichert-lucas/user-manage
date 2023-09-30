@@ -18,14 +18,14 @@
     - [x] Nome;
     - [x] Data de conclusão;
     - [x] Status;
-- [x] Criar um demo e disponibilizar online
+- [ ] Criar um demo e disponibilizar online
 
 #### Todas as telas precisam ser em VueJS;
 - [x] As telas de cadastro e edição não podem ser exibidas em modal;
 - [x] O Controle de rotas na camada web precisa ser feita com VueRouter;
 - [x] Todas as rotas precisam estar protegidas e a autenticação deve ser feita na camada de api stateless com JWT Token;
 - [ ] O sistema precisa enviar um e-mail sempre que um cadastro for feito, editado ou deletado;
-- [x] O sistema precisa oferecer suporte a criação do primeiro usuário via CLI (`docker exec -it user-manager-front php artisan db:seed --class=UserSeeder`) 
+- [x] O sistema precisa oferecer suporte a criação do primeiro usuário via CLI (`docker exec -it user-manager-front php artisan migrate:fresh --seed`) 
 
 #### Tecnologias que devem ser utilizadas:
 - [x] VueJS, VueRouter, Axios. (Qualquer outra peça do ecossistema Vue é permitida Vuex, VueI18n, VueCli e componentes feitos em Vue)
