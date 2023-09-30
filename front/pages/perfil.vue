@@ -2,11 +2,7 @@
   <v-card class="pa-8">
     <v-container>
       <h2 class="mb-6 blue-grey--text">Editar perfil</h2>
-
-      <v-row class="d-flex justify-center mb-6">
-        <photo-input />
-      </v-row>
-
+      
       <validation-observer v-slot="{ handleSubmit }" ref="formValidator">
         <form @submit.prevent="handleSubmit(sendLogin)">
           <v-row>

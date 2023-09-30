@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\StoreUserRequest;
+use App\Http\Requests\StoreTaskRequest;
 use App\Http\Requests\TaskSearchRequest;
 use App\Http\Requests\UpdateTaskRequest;
 use App\Http\Resources\TaskResource;
@@ -25,7 +25,7 @@ class TaskController extends Controller
         );
     }
     
-    public function store(StoreUserRequest $request)
+    public function store(StoreTaskRequest $request)
     {
         $task = Task::create($request->only(['name']));
 

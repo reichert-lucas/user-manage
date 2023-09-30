@@ -59,6 +59,11 @@ export default {
         icon: 'mdi-account-group',
         path: '/usuarios',
       },
+      {
+        title: 'Tarefas',
+        icon: 'mdi-calendar-check',
+        path: '/tarefas',
+      },
     ],
   }),
 
