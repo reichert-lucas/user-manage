@@ -19,6 +19,10 @@
 ### Acessando o projeto
 O projeto vai estar disponível nos seguintes endereços: `https://localhost:3000` e `http://localhost:8000`
 
+### Dados do usuário de teste
+`primeiro_usuario@test.com`
+`password`
+
 ## Objetivos
 - [x] Tela de login;
 - [x] CRUD completo de usuário;
