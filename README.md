@@ -13,6 +13,9 @@
 ### Populando a base de dados
 `docker exec -it user-manager-front php artisan migrate:fresh --seed`
 
+### Rodando alguns testes
+`docker exec -it user-manager-front php artisan test`
+
 ### Acessando o projeto
 O projeto vai estar disponível nos seguintes endereços: `https://localhost:3000` e `http://localhost:8000`
 
