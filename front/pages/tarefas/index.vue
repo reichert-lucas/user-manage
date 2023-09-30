@@ -41,7 +41,8 @@
             >
               <v-card
                 class="mx-auto"
-                elevation="6"
+                :elevation="task.status.id === 3 ? 0 : 6"
+                :color="task.status.id === 3 ? 'rgba(174, 174, 174, 0.15)' : null"
                 outlined
               >
                 <v-list-item three-line>
