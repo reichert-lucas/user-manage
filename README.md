@@ -14,10 +14,10 @@
 - [x] Tela de login;
 - [x] CRUD completo de usuário;
 - [x] Cadastro básico;
-- [ ] CRUD completo de tarefas;
-    - [ ] Nome;
-    - [ ] Data de conclusão;
-    - [ ] Status;
+- [x] CRUD completo de tarefas;
+    - [x] Nome;
+    - [x] Data de conclusão;
+    - [x] Status;
 - [x] Criar um demo e disponibilizar online
 
 #### Todas as telas precisam ser em VueJS;
