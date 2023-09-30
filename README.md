@@ -27,7 +27,7 @@ O projeto vai estar disponível nos seguintes endereços: `https://localhost:300
     - [x] Nome;
     - [x] Data de conclusão;
     - [x] Status;
-- [ ] Criar um demo e disponibilizar online
+- [x] Criar um demo e disponibilizar online
 
 #### Todas as telas precisam ser em VueJS;
 - [x] As telas de cadastro e edição não podem ser exibidas em modal;
