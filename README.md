@@ -37,7 +37,7 @@ O projeto vai estar disponível nos seguintes endereços: `https://localhost:300
 - [x] As telas de cadastro e edição não podem ser exibidas em modal;
 - [x] O Controle de rotas na camada web precisa ser feita com VueRouter;
 - [x] Todas as rotas precisam estar protegidas e a autenticação deve ser feita na camada de api stateless com JWT Token;
-- [ ] O sistema precisa enviar um e-mail sempre que um cadastro for feito, editado ou deletado; -> Não fiz essa parte para facilitar o deploy da demo no servidor, já que não tenho nenhum servidor de e-mail. Mas se eu fosse fazer, eu ia criar um evento, que ao ser disparado ia enviar o e-mail para a fila do laravel, para evitar de quem estiver usando o sistema, perder tempo esperando o envio do e-mail. Na empresa onde trabalho usamos o horizon para as filas.
+- [x] O sistema precisa enviar um e-mail sempre que um cadastro for feito, editado ou deletado; -> Não fiz o uso de filas nessa parte para facilitar o deploy da demo no servidor, mas já usei Job e filas em outros projetos.
 - [x] O sistema precisa oferecer suporte a criação do primeiro usuário via CLI (`docker exec -it user-manager-front php artisan migrate:fresh --seed`) 
 
 #### Tecnologias que devem ser utilizadas:
@@ -46,3 +46,13 @@ O projeto vai estar disponível nos seguintes endereços: `https://localhost:300
 - [x] A camada web precisa ser uma SPA;
 - [x] O Backend só pode ser acionado na camada de API;
 - [x] O Backend deve ser construído no laravel;
+
+<div align="center" style="padding='3%'">
+    <img src="imgs/1.png" class="img-fluid" width="95%">
+    <img src="imgs/2.png" class="img-fluid" width="95%">
+    <img src="imgs/3.png" class="img-fluid" width="95%">
+    <img src="imgs/4.png" class="img-fluid" width="95%">
+    <img src="imgs/5.png" class="img-fluid" width="95%">
+    <img src="imgs/6.png" class="img-fluid" width="95%">
+    <img src="imgs/7.png" class="img-fluid" width="95%">
+</div>
