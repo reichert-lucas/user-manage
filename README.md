@@ -48,11 +48,11 @@ O projeto vai estar disponível nos seguintes endereços: `https://localhost:300
 - [x] O Backend deve ser construído no laravel;
 
 <div align="center" style="padding='3%'">
-    <img src="imgs/1.png" class="img-fluid" width="95%">
-    <img src="imgs/2.png" class="img-fluid" width="95%">
-    <img src="imgs/3.png" class="img-fluid" width="95%">
-    <img src="imgs/4.png" class="img-fluid" width="95%">
-    <img src="imgs/5.png" class="img-fluid" width="95%">
-    <img src="imgs/6.png" class="img-fluid" width="95%">
-    <img src="imgs/7.png" class="img-fluid" width="95%">
+    <img src="prints/1.png" class="img-fluid" width="95%">
+    <img src="prints/2.png" class="img-fluid" width="95%">
+    <img src="prints/3.png" class="img-fluid" width="95%">
+    <img src="prints/4.png" class="img-fluid" width="95%">
+    <img src="prints/5.png" class="img-fluid" width="95%">
+    <img src="prints/6.png" class="img-fluid" width="95%">
+    <img src="prints/7.png" class="img-fluid" width="95%">
 </div>
